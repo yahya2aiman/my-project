@@ -1,0 +1,170 @@
+body {
+  background: linear-gradient(#141e30, #243b55);
+  font-family: sans-serif;
+}
+.yahya1 {
+  width: 400px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+.yahya5 h2 {
+  margin: 0 0 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #fff;
+}
+.yahya2 {
+  position: relative;
+}
+.yahya2 input {
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  animation-play-state: running;
+  background: transparent;
+  animation-name: one;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.yahya2 label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  pointer-events: none;
+  padding: 10px 0;
+  transition: 0.5s;
+}
+.yahya2 input:focus ~ label,
+.yahya2 input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+@keyframes one {
+  0% {
+    border-bottom-color: blueviolet;
+  }
+  30% {
+    border-block-color: #03e9f4;
+  }
+  70% {
+    border-bottom-color: #03e9f4;
+  }
+  100% {
+    border-bottom-color: blueviolet;
+  }
+}
+.yahya2 input:focus {
+  animation-play-state: paused;
+  border-bottom: 1px solid #fff;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.yahya3 {
+  position: relative;
+}
+.yahya3 input {
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  animation-name: tow;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.yahya3 label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.yahya3 input:focus ~ label,
+.yahya3 input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+@keyframes tow {
+  0% {
+    border-bottom-color: blue;
+  }
+  30% {
+    border-block-color: #03e9f4;
+  }
+  70% {
+    border-bottom-color: #03e9f4;
+  }
+  100% {
+    border-bottom-color: blue;
+  }
+}
+
+.yahya3 input:focus {
+  animation-play-state: paused;
+}
+
+.yahya4 input {
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  margin-top: 40px;
+  letter-spacing: 4px;
+  background: transparent;
+  color: #03e9f4;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation-name: three;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.yahya4 input:hover {
+  transition: 1s;
+
+  background: #03e9f4;
+  transition-timing-function: ease;
+  color: #fff;
+
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
